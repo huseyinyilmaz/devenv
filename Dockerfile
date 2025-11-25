@@ -17,6 +17,7 @@ RUN apt-get update && \
                        zlib1g-dev \
                        libssl-dev \
                        golang-go \
+                       direnv \
                        nmap && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*

@@ -23,3 +23,7 @@ git clone https://github.com/huseyinyilmaz/neovim-config.git ~/.config/nvim
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # install pyenv
 curl -fsSL https://pyenv.run | bash
+# install starship
+curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir=$HOME/bin
+# setup starship.
+cp /config/.config/starship.toml ~/.config/starship.toml
