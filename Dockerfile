@@ -12,10 +12,13 @@ RUN apt-get update && \
                        make \
                        emacs \
                        dnsutils \
+                       build-essential \
+                       software-properties-common \
+                       golang-go \
                        nmap && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
+RUN ssh-keygen -t rsa -f "/root/.ssh/id_rsa" -q -N ""
 # Config update.
 COPY config /config
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Update bashrc
 cat /config/.bashrc >> ~/.bashrc
 # Create ~/bin directory
@@ -9,3 +11,13 @@ tar -xzvf zellij-x86_64-unknown-linux-musl.tar.gz
 # Add zellij config.
 mkdir -p ~/.config/zellij
 cp /config/.config/zellij/config.kdl ~/.config/zellij
+
+# Neovim setup 
+cd ~/bin
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz
+tar -xzvf nvim-linux-x86_64.tar.gz
+ln -s /root/bin/nvim-linux-x86_64/bin/nvim /root/bin/nvim 
+# get the configuration in place
+git clone https://github.com/huseyinyilmaz/neovim-config.git ~/.config/nvim
+# install rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
