@@ -21,3 +21,5 @@ ln -s /root/bin/nvim-linux-x86_64/bin/nvim /root/bin/nvim
 git clone https://github.com/huseyinyilmaz/neovim-config.git ~/.config/nvim
 # install rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# install pyenv
+curl -fsSL https://pyenv.run | bash

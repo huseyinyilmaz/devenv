@@ -14,6 +14,8 @@ RUN apt-get update && \
                        dnsutils \
                        build-essential \
                        software-properties-common \
+                       zlib1g-dev \
+                       libssl-dev \
                        golang-go \
                        nmap && \
     apt-get clean && \
