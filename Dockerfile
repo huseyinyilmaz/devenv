@@ -16,6 +16,17 @@ RUN apt-get update && \
                        software-properties-common \
                        zlib1g-dev \
                        libssl-dev \
+                       liblzma-dev \
+                       libbz2-dev \
+                       libreadline-dev \
+                       libsqlite3-dev \
+                       llvm \
+                       libncursesw5-dev \
+                       xz-utils \
+                       tk-dev \
+                       libxml2-dev \
+                       libxmlsec1-dev \
+                       libffi-dev \
                        golang-go \
                        direnv \
                        nmap && \
